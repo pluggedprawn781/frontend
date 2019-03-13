@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var studenten = new Array('zakaria', ' jozef', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      index = studenten.indexOf('jozef');
+      studenten.unshift(' umut');
+      studenten.push(' david');
+      studenten.sort();
+      klas.reverse();
+      delete klas[2];
+      document.write("<br> opgave 35: resultaat van delete: " + klas);
+    </script>
+  </body>
+</html>
