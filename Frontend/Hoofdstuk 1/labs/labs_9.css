@@ -1,0 +1,9 @@
+table{
+  border: 3px double black;
+  background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
+  margin: 0 auto;
+}
+td{
+  border: 3px double black;
+  padding: 0 15px 0 15px;
+}

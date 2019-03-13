@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"
+          http-equiv="Content-Type"
+          content="text/html">
+          <link rel="stylesheet" href="responsive.css">
+          <link rel="stylesheet" href="index.css">
+    <title>RadioGaGa</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.htm">home</a> </li>
+        <li><a href="playlist.htm">playlist</a> </li>
+        <li><a href="formulier.htm">formulier</a> </li>
+        <li><a href="contact.htm">contact</a> </li>
+      </ul>
+    </nav>
+  <div id="logo">
+  </div>
+    <main>
+      <div id="albums">
+        <ul>
+          <li>
+            <a onclick=
+             "
+              document.getElementById('album-1').style.display='block';
+              document.getElementById('album-2').style.display='none';
+              document.getElementById('album-3').style.display='none';
+             "><img src="images/album-1.jpg"></a>
+          </li>
+          <li>
+            <a onclick=
+             "
+              document.getElementById('album-1').style.display='none';
+              document.getElementById('album-2').style.display='block';
+              document.getElementById('album-3').style.display='none';
+             "><img src="images/album-2.jpg"></a>
+          </li>
+          <li>
+            <a onclick
+             "
+              document.getElementById('album-1').style.display='none';
+              document.getElementById('album-2').style.display='none';
+              document.getElementById('album-3').style.display='block';
+             "><img src="images/album-3.jpg"></a>
+          </li>
+        </ul>
+      </div>
+      <!--einde albums-->
+      <div id="multimedia">
+        <div id="album-1" style='display: block'>
+          <video controls width="80%" preload poster="images/album-1.jpg">
+            <source src="images/trailer.mp4" type="video/mp4">
+            <source src="images/trailer.mp4" type="video/mp4">
+            <source src="images/trailer.mp4" type="video/mp4">
+          </video>
+          <table>
+            <thead>
+              <tr>
+                <th>track</th>
+                <th>title</th>
+                <th>tijd</th>
+                <th>play</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>titel 1</td>
+                <td>02:08</td>
+                <td>
+                <a onclick="document.getElementById('audio').src='music/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a>
+                </td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>titel 2</td>
+                <td>03:18</td>
+                <td>
+                <a onclick="document.getElementById('audio').src='music/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a>
+                </td>
+             </tr>
+             <tr>
+               <td>3</td>
+               <td>titel 3</td>
+               <td>02:08</td>
+               <td>
+               <a onclick="document.getElementById('audio').src='music/2121.mp3';
+                 v=document.getElementById('audio');
+                 v.play();">|></a>
+               </td>
+             </tr>
+            </tbody>
+          </table>
+          <audio src="music/2121.mp3" id="music" style="display: block" controls>
+          </audio>
+          <div id="album-2" style="display: none">
+
+          </div>
+          <div id="album-3" style="display: none">
+
+          </div>
+        </div>
+         </div>
+          <div id="pager">
+            <div id="previous">
+              <a href="contact.htm">&lt;</a>
+            </div>
+              <div id="next">
+              <a href="formulier.htm">&gt;</a>
+          </div>
+        </div>
+      </main>
+    <footer>
+      <a href="#top"><img src="images/twitter.png"></a>
+      <a href="#top"><img src="images/facebook.png"></a>
+      <a href="#top"><img src="images/youtube.png"></a>
+      <p>copyright&copy; 2019 <i>designed by: martijn van der waal</i>
+        all rights preserved.</p>
+    </footer>
+  </body>
+</html>

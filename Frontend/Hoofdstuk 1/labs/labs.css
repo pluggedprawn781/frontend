@@ -1,0 +1,45 @@
+#one{
+  width: 80%;
+  height: 80px;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+@-webkit-keyframes revolutie{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)};
+}
+#two{
+  width: 80%;
+  height: 220px;
+  font-size: 15px;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: revolutie;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+#three{
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  background-image: url(google.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+#four{
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+#four p{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

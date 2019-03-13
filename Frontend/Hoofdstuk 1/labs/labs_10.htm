@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="labs_10.css">
+  </head>
+  <body>
+    <form class="formulier" action="mailto: postmaster@radiogaga.com" method="post">
+        <fieldset>
+          <legend>inschrijfformulier</legend>
+          <input required type="text" name="" placeholder="kies een cursus" list="cursus">
+          <datalist id="cursus">
+            <option value="kok"></option>
+            <option value="monteur"></option>
+            <option value="koekebakker"></option>
+          </datalist><br>
+            <input required type="text" name="" placeholder="kies een locatie" list="plaats">
+          <datalist id="plaats">
+            <option value="amsterdam"></option>
+            <option value="utrecht"></option>
+            <option value="antwerpen"></option>
+            <option value="apeldoorn"></option>
+            <option value="brussel"></option>
+            <option value="rotterdam"></option>
+          </datalist><br>
+          <label for="datum">geboortedatum</label><br>
+            <input type="date" name="datum" required><br>
+          <label for="geslacht">selecteer opleiding: </label>
+                bol:
+                  <input type="radio" name="bol" value="bol">
+                bbl:
+                  <input type="radio" name="bbl" value="bbl"><br>
+            <input required type="text" name="naam" placeholder="naam"><br>
+            <input required type="text" name="achternaam" placeholder="achternaam"><br>
+            <input required type="text" name="adres" placeholder="adres"><br>
+            <input required type="email" name="email" placeholder="email"><br>
+            <input required type="text" name="mobiel" placeholder="mobiel"><br>
+          <label for="tijden">geef je voorkeur aan:</label><br>
+            weekendschool:
+              <input type="checkbox" name="weekendschool" value="weekendschool" ><br>
+            avondschool:
+              <input type="checkbox" name="avondschool" value="avondschool"><br>
+            geen voorkeur:
+              <input type="checkbox" name="geen" value="geen"><br>
+            <label for="ranking">geef je opleidings niveau</label><br>
+            <input type="range" name="niveau" min="1" max="5">
+       </fieldset>
+       <input type="submit" name="verzend" value="verzend">
+    </form>
+  </body>
+</html>

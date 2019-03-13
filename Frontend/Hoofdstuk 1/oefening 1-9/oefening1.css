@@ -1,0 +1,44 @@
+body{
+  width: 40%;
+  font-size: 80px;
+}
+#a{
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10PX;
+  padding: 10px 5px 0% 30px;
+  padding-left: 25px;
+  box-shadow: 5px 5px 10px green;
+  color: red;
+  text-shadow: 5px 5px 10px red;
+}
+#b{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  box-shadow: -5px -5px 10px black;
+  color: green;
+  text-shadow: -5px -5px 10px green;
+
+}
+#c{
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  border: 3px dotted black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-right: 25px;
+  box-shadow: 0px 5px 10px blue;
+  color: white;
+  text-shadow: 0px 5px 10px white;
+  text-align: right; 
+}

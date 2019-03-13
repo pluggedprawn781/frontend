@@ -1,0 +1,97 @@
+html{
+  height: 100%;
+  width: 100%;
+  background: #lightgray;
+  overflow: auto;
+}
+main{
+  width: 100%;
+  margin: 0;
+  padding-bottom: 3%;
+}
+body{
+  width: 96%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  border: 1px solid;
+  overflow: inherit;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+}
+#logo{
+  margin-top: 15px;
+  padding-top: 10%;
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@-webkit-keyframes revolutie{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)};
+}
+#disc{
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.8;
+  width: 400px;
+  height: 400px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, grey, black);
+  -webkit-animation-name: revolutie;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+#center{
+  width: 105px;
+  height: 105px;
+  background-color: orange;
+  position: relative;
+  top: 37%;
+  left: 37%;
+  display: block;
+  border-radius: 50%;
+  border: 0.5px solid #fff;
+}
+
+h3{
+  margin: 0;
+  box-shadow:  4px 4px 10px rgba(0,0,0,0.5);
+}
+nav{
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+  float: left;
+}
+nav ul{
+  text-align: center;
+  margin: 0 0 0 0;
+  padding-left: 0;
+}
+nav ul li{
+  width: 25%;
+  background: linear-gradient(#9fb3b5,#e3e9ea,#7c9799);
+}
+nav ul li a {
+  font-size: 1.7rem;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+nav ul li:hover{
+  color:firebrick;
+  background: white;
+  letter-spacing: 5px;
+}
+nav ul li a:hover,
+nav ul li a:focus{
+  color:firebrick;
+}

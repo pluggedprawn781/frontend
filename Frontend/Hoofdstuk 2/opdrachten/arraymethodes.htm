@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      team = studenten;
+      team[0] = " umut";
+      studenten.shift();
+      studenten.unshift('jozef', ' umut');
+      document.write("<br> opgave 25: studenten: " + team);
+      document.write("<br> opgave 26: Elemant [0] is gewijzigd " + studenten);
+      document.write("<br> opgave 27: resultaat van shift")
+      document.write("<br> opgave 2: resultaat van unshift: " + studenten)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+div{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.7;
+  text-align: center;
+  color: rgb(69, 220, 223);
+}
+#verticaal{
+  margin: 30px 20px 0 0;
+  transform:             skew(0, -30deg);
+    -ms-transform:       skew(0, -30deg);
+    -moz-transform:      skew(0, -30deg);
+    -webkit-transform:   skew(0, -30deg);
+    -o-transform:        skew(0, -30deg);
+}
+div:first-child{
+  background-color: rgb(250, 50, 39);
+  z-index: 1;
+  position: relative;
+  top: 120px;
+  left: 20px;
+  -webkit-animation-name: left;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: alternate;
+}
+div:nth-child(2){
+  background-color: rgb(104, 56, 201);
+  z-index: 0;
+  position: relative;
+  left: 60px;
+  -webkit-animation-name: right;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+div:nth-child(3){
+  background-color: rgb(118, 230, 38);
+  z-index: -1;
+  position: relative;
+  bottom: 120px;
+  left: 100px;
+  -webkit-animation-name: left;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes right{
+  from {transform: rotatex(0deg);}
+  to {transform: rotatex(360deg)};
+}
+@-webkit-keyframes left{
+  from {transform: rotatex(0deg);}
+  to {transform: rotatex(-360deg)};
+}
