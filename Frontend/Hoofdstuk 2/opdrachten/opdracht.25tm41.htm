@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>opdrachten 25 t/m 41</title>
+  </head>
+  <body>
+    <!--opdacht 25-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      document.write("<br> opgave 25: studenten: " + team);
+    </script>
+    <!--opdracht 26-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      team = studenten;
+      team[0] = " umut";
+      document.write("<br> opgave 26: Elemant [0] is gewijzigd " + studenten);
+    </script>
+    <!--opdracht 27-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      team = studenten;
+      studenten.shift();
+      document.write("<br> opgave 27: resultaat van shift")
+    </script>
+    <!--opdracht 28-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      team = studenten;
+      studenten.unshift('jozef', ' umut');
+      document.write("<br> opgave 28: resultaat van unshift: " + studenten)
+    </script>
+    <!--opdracht 29-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      team = studenten;
+      studenten.unshift('jozef', ' umut');
+      studenten.pop();
+      document.write("<br> opgave 29: resultaat van pop: " + studenten)
+    </script>
+    <!--opdracht 30-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      team = studenten;
+      studenten.unshift('jozef', ' umut');
+      studenten.push(' david');
+      document.write("<br> opgave 30: resultaat van push: " + studenten)
+    </script>
+    <!--opdracht 31-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      studenten.unshift('jozef', ' umut');
+      studenten.push(' david');
+      klas = studenten.splice(2,4);
+      document.write("<br> opgave 31: resultaat van splice: " + studenten + "<br> klas: " + klas);
+    </script>
+    <!--opdracht 32-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      studenten.unshift(' jozef', ' umut');
+      studenten.push(' david');
+      studenten.sort();
+      document.write("<br> opgave 32: resultaat van splice: " + studenten + "<br> klas: " + klas);
+    </script>
+    <!--opdracht 33-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      studenten.unshift(' jozef', ' umut');
+      studenten.push(' david');
+      studenten.sort();
+      klas.reverse();
+      document.write("<br> opgave 33: resultaat van splice: " + studenten + "<br> klas: " + klas);
+    </script>
+    <!--opdracht 34-->
+    <script>
+      var studenten = new Array('zakaria', ' jozef', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      index = studenten.indexOf('jozef');
+      studenten.unshift(' umut');
+      studenten.push(' david');
+      studenten.sort();
+      klas.reverse();
+      document.write("<br> opgave 34: resultaat van indexOf: " + index);
+    </script>
+    <!--opdracht 35-->
+    <script>
+      var studenten = new Array('zakaria', ' jozef', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      index = studenten.indexOf('jozef');
+      studenten.unshift(' umut');
+      studenten.push(' david');
+      studenten.sort();
+      klas.reverse();
+      delete klas[2];
+      document.write("<br> opgave 35: resultaat van delete: " + klas);
+    </script>
+    <!--opdracht 36-->
+    <script>
+      var studenten = new Array('zakaria', ' jozef', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      index = studenten.indexOf('jozef');
+      studenten.unshift(' umut');
+      studenten.push(' david');
+      studenten.sort();
+      klas.reverse();
+      delete klas[2];
+      document.write("<br> opgave 36: datatype van het gedelete element is : "+ typeof klas[2]);
+    </script>
+    <!--opdracht 37-->
+    <script>
+      var studenten = new Array('zakaria', ' jozef', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      index = studenten.indexOf('jozef');
+      studenten.unshift(' umut');
+      studenten.push(' david');
+      studenten.sort();
+      klas.reverse();
+      klas.splice(index,1)
+      document.write("<br> opgave 37: het element volledig verwijderen: "+ klas);
+    </script>
+    <!--opdracht 38-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      index = studenten.indexOf('jozef');
+      studenten.unshift(' umut');
+      studenten.push( ' jozef',' david');
+      studenten.sort();
+      klas.reverse();
+      studenten.splice(index,1)
+      document.write("<br> opgave 38: het element volledig verwijderen: "+ studenten);
+    </script>
+    <!--opdracht 39-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      klas2 = klas.slice();
+      studenten.unshift(' umut');
+      studenten.push( ' jozef',' david');
+      document.write("<br> opgave 39: resultaat van kopieren: "+ klas2);
+    </script>
+    <!--opdracht 40-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      var myString = klas.join('|');
+      studenten.unshift(' umut');
+      studenten.push( ' jozef',' david');
+      document.write("<br> opgave 40: resultaat van join: "+ myString);
+    </script>
+    <!--opdracht 41-->
+    <script>
+      var studenten = new Array('zakaria', ' hamza', ' albert', ' mike', ' pieter');
+      klas = studenten.splice(2,4);
+      var myString = klas.join('|');
+      var myArray = myString.split('|');
+      studenten.unshift(' umut');
+      studenten.push( ' jozef',' david');
+      document.write("<br> opgave 41: resultaat van join: "+ myArray);
+    </script>
+  </body>
+</html>

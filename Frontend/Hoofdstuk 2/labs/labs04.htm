@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>labs 04</title>
+  </head>
+  <body>
+    <script>
+      var lastkleur = prompt('Voer een kleur in');
+      var firstkleur = prompt('Voer een kleur in');
+      var palet2 = kleuren.slice();
+      var palet = new Array();
+        palet[0] = 'rood';
+        palet[1] = 'blauw';
+        palet[2] = 'geel';
+        palet[3] = 'paars';
+        palet[4] = 'groen';
+      palet.push( lastkleur);
+      palet.unshift(firstkleur);
+      palet.sort();
+      document.write('<br> labs04: Toon kleuren palet:' + palet + '<br> palet2' + palet2);
+    </script>
+  </body>
+</html>

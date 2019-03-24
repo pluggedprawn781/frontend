@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>labs 3</title>
+  </head>
+  <body>
+    <!--opdracht 2-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee';
+      testarray[2] = ' 3';
+      testarray[3] = ' vier';
+      document.write("<br>  toon testarray" + testarray);
+    </script>
+    <!--opdracht 3-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee';
+      testarray[2] = ' 3';
+      testarray[3] = ' vier';
+      testarray.push(' 5');
+      document.write("<br> toon testarray" + testarray);
+    </script>
+    <!--opdracht 4-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.push( 5);
+      document.write("<br> toon datatype testarray element 5: " + typeof testarray[4]);
+    </script>
+    <!--opdracht 5,6-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.push( 5);
+      delete testarray[4];
+      document.write("<br> toon testarray" + testarray);
+    </script>
+    <!--opdracht 7,8-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.unshift(' nul');
+      testarray.push( 5);
+      delete testarray[5];
+      document.write("<br> toon testarray" + testarray);
+    </script>
+    <!--opdracht 9,10-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.unshift(' nul');
+      testarray.push( 5);
+      delete testarray[0];
+      delete testarray[5];
+      document.write("<br> toon datatype testarray element 0: " + typeof testarray[0]);
+    </script>
+    <!--opdracht 11,12-->
+    <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.unshift(' nul');
+      testarray.push( 5);
+      delete testarray[0];
+      delete testarray[5];
+      document.write("<br> toon testarray" + testarray);
+    </script>
+    <!--opdracht 13,14-->
+   <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.unshift(' nul');
+      testarray.push( 5);
+      delete testarray[0];
+      delete testarray[1];
+      delete testarray[5];
+      document.write("<br> toon testarray" + testarray);
+    </script>
+    <!--opdracht 15,16-->
+   <script>
+      var testarray = new Array();
+      testarray[0] = ' een';
+      testarray[1] = ' twee ';
+      testarray[2] = 3;
+      testarray[3] = ' vier ';
+      testarray.unshift(' nul');
+      testarray.push( 5);
+      delete testarray[0];
+      delete testarray[2];
+      delete testarray[1];
+      delete testarray[5];
+      document.write("<br> toon testarray" + testarray);
+    </script>
+  </body>
+</html>

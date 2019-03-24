@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        var einddatum = prompt('wat is de einddag JJJJ-MM-DD?');
+        var deadline = new Date(einddatum);
+        var nu = Date.now();
+        var dag = 86400000;
+        var resterende = ((nu - deadline) / dag);
+      document.write('deadline: ' + deadline);
+    </script>
+  </body>
+</html>
