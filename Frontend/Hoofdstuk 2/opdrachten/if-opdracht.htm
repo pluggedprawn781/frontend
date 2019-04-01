@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>if opdracht</title>
+  </head>
+  <body>
+    <script>
+      doorgaan = confirm('opgave 52: Doorgaan?');
+      if(doorgaan == true){
+        (leeftijd = parseInt(prompt('wat is je leeftijd')));
+        if(leeftijd < 17){
+          leerplichtig = true;
+        }else{
+          leerplichtig = false;
+        }
+        gediplomeerd = confirm('heb je je diploma gehaald');
+        if(leerplichtig && !gediplomeerd){
+          alert('doorstuderen');
+        }
+        if(!leerplichtig && !gediplomeerd){
+          alert('je bent niet leerplichtig en niet gediplomeerd');
+        }
+        if(gediplomeerd || !leerplichtig){
+          alert('je bent gediplomeerd of niet leerplichtig OF allebei');
+        }
+      }
+    </script>
+  </body>
+</html>
